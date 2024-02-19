@@ -24,7 +24,7 @@ const CallComponent = ({ agentId, accessToken }) => {
   const handleConfirm = async () => {
     if (phoneNumber !== '') {
       try {
-        const response = await api.post('/make_call', {
+        const response = await api.post('/demo_call', {
           agent_id: agentId,
           recipient_phone_number: phoneNumber
         });
